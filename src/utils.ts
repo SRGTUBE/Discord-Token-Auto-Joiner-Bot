@@ -6,7 +6,10 @@ export default {
         const tokensPath = path.join(__dirname, "..", "tokens.txt")
 
         if (fs.existsSync(tokensPath)) {
-            const tokens = fs.readFileSync(tokensPath, "utf-8").split("\n").filter(Boolean);
+            const tokens = fs.readFileSync(tokensPath, "utf-8")
+                .split("\n")
+                .map(token => token.trim()) // Removes extra spaces and \r
+                .filter(Boolean);
             return tokens.length ? tokens : null;
         }
         return null;

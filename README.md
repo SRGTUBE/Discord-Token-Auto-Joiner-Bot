@@ -38,7 +38,7 @@ Create a `.env` file in the root directory and configure the following:
 CLIENT_TOKEN=your_discord_bot_token
 CLIENT_ID=your_discord_application_id
 CLIENT_SECRET=your_discord_application_secret
-REDIRECT_URL=your_redirect_url
+REDIRECT_URL=http://localhost:3000
 ```
 
 ### **5. Add Tokens**
