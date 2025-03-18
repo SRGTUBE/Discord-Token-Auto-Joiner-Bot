@@ -41,7 +41,20 @@ CLIENT_SECRET=your_discord_application_secret
 REDIRECT_URL=http://localhost:3000
 ```
 
-### **5. Add Tokens**
+### **5. Setup Redirect URL in Discord Developer Portal**
+1. Go to [Discord Developer Portal](https://discord.com/developers/applications).
+2. Select your application.
+3. Navigate to the **OAuth2** tab.
+4. Scroll down to **Redirects**.
+5. Click **Add Redirect** and enter:
+   ```
+   http://localhost:3000
+   ```
+6. Click **Save Changes** at the bottom of the page.
+
+---
+
+### **6. Add Tokens**
 Create a `tokens.txt` file in the root directory and add each self-bot token on a new line:
 ```
 token_1
